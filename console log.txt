@@ -1,0 +1,294 @@
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (main)
+$ git pull
+From https://github.com/PaelPavlov/SEDO_Regular-Exam-1
+ * [new branch]      bugfix/change-button -> origin/bugfix/change-button
+ * [new branch]      chore/display-logic  -> origin/chore/display-logic
+ * [new branch]      feature/add-quotes   -> origin/feature/add-quotes
+Already up to date.
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (main)
+$ git checkout feature/add-quotes
+branch 'feature/add-quotes' set up to track 'origin/feature/add-quotes'.
+Switched to a new branch 'feature/add-quotes'
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git status
+On branch feature/add-quotes
+Your branch is up to date with 'origin/feature/add-quotes'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   script.js
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git commit -m "first commit"
+[feature/add-quotes fc9d632] first commit
+ 3 files changed, 9 insertions(+), 5 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git commit -m "second commit"
+[feature/add-quotes b9cb406] second commit
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git commit -m "third commit"
+[feature/add-quotes b97167f] third commit
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git --oneline
+unknown option: --oneline
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git log --oneline
+b97167f (HEAD -> feature/add-quotes) third commit
+b9cb406 second commit
+fc9d632 first commit
+d5ba0bc (origin/main, origin/feature/add-quotes, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git rebase -i HEAD~3
+[detached HEAD 645d03e] Added functionality
+ Date: Sun Oct 26 09:20:26 2025 +0100
+ 3 files changed, 16 insertions(+), 6 deletions(-)
+Successfully rebased and updated refs/heads/feature/add-quotes.
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git status
+On branch feature/add-quotes
+Your branch is ahead of 'origin/feature/add-quotes' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 902 bytes | 902.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/PaelPavlov/SEDO_Regular-Exam-1.git
+   d5ba0bc..645d03e  feature/add-quotes -> feature/add-quotes
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git branch
+* feature/add-quotes
+  main
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (feature/add-quotes)
+$ git checkout bugfix/change-button
+branch 'bugfix/change-button' set up to track 'origin/bugfix/change-button'.
+Switched to a new branch 'bugfix/change-button'
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git status
+On branch bugfix/change-button
+Your branch is up to date with 'origin/bugfix/change-button'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   script.js
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git commit -m "First Commit"
+[bugfix/change-button 3cc923b] First Commit
+ 3 files changed, 8 insertions(+), 6 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git commit -m "second commit."
+[bugfix/change-button 93dc1f7] second commit.
+ 2 files changed, 7 insertions(+), 9 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git commit -m "third commit"
+[bugfix/change-button 501fd90] third commit
+ 3 files changed, 4 insertions(+), 3 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git log --oneline
+501fd90 (HEAD -> bugfix/change-button) third commit
+93dc1f7 second commit.
+3cc923b First Commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/bugfix/change-button, origin/HEAD, main) Initial commit
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git rebase -i HEAD~3
+[detached HEAD ea98c82] Bug fix
+ Date: Sun Oct 26 09:24:25 2025 +0100
+ 3 files changed, 9 insertions(+), 8 deletions(-)
+Successfully rebased and updated refs/heads/bugfix/change-button.
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git status
+On branch bugfix/change-button
+Your branch is ahead of 'origin/bugfix/change-button' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 655 bytes | 655.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/PaelPavlov/SEDO_Regular-Exam-1.git
+   d5ba0bc..ea98c82  bugfix/change-button -> bugfix/change-button
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (bugfix/change-button)
+$ git checkout chore/display-logic
+branch 'chore/display-logic' set up to track 'origin/chore/display-logic'.
+Switched to a new branch 'chore/display-logic'
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git status
+On branch chore/display-logic
+Your branch is up to date with 'origin/chore/display-logic'.
+
+nothing to commit, working tree clean
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git status
+On branch chore/display-logic
+Your branch is up to date with 'origin/chore/display-logic'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   script.js
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git commit -m "first commit"
+[chore/display-logic 581d8f0] first commit
+ 3 files changed, 7 insertions(+), 4 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git commit -m "second commit"
+[chore/display-logic 889ec25] second commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git add .
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git commit -m "third commit"
+[chore/display-logic e8c9db4] third commit
+ 2 files changed, 8 insertions(+), 5 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git log --oneline
+e8c9db4 (HEAD -> chore/display-logic) third commit
+889ec25 second commit
+581d8f0 first commit
+d5ba0bc (origin/main, origin/chore/display-logic, origin/HEAD, main) Initial commit
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git rebase -i HEAD~3
+[detached HEAD 1a52f4a] Added display logic
+ Date: Sun Oct 26 09:26:50 2025 +0100
+ 3 files changed, 13 insertions(+), 6 deletions(-)
+Successfully rebased and updated refs/heads/chore/display-logic.
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git status
+On branch chore/display-logic
+Your branch is ahead of 'origin/chore/display-logic' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 837 bytes | 837.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/PaelPavlov/SEDO_Regular-Exam-1.git
+   d5ba0bc..1a52f4a  chore/display-logic -> chore/display-logic
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (chore/display-logic)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (main)
+$ git pull origin main
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 12 (delta 3), reused 3 (delta 3), pack-reused 5 (from 2)
+Unpacking objects: 100% (12/12), 6.42 KiB | 101.00 KiB/s, done.
+From https://github.com/PaelPavlov/SEDO_Regular-Exam-1
+ * branch            main       -> FETCH_HEAD
+   d5ba0bc..0b10c0c  main       -> origin/main
+Updating d5ba0bc..0b10c0c
+Fast-forward
+ index.html |  5 +++--
+ script.js  | 21 +++++++++++++++++----
+ style.css  |  8 ++++----
+ 3 files changed, 24 insertions(+), 10 deletions(-)
+
+Pickles@Maldah MINGW64 ~/Desktop/exam1/SEDO_Regular-Exam-1 (main)
+
